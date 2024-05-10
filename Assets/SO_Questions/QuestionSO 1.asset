@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ba92b839de96d4aa87729685a74a75, type: 3}
+  m_Name: QuestionSO 1
+  m_EditorClassIdentifier: 
+  answerSODatas:
+  - {fileID: 11400000, guid: 8da28ca3c0cbcc34e9e2bdb40452c158, type: 2}
+  - {fileID: 11400000, guid: 5e4d7be9710d44f4581881b84a6a919b, type: 2}
+  - {fileID: 11400000, guid: dba94788af9b74941851e7b0946f19ee, type: 2}
+  question: annenin ismi
+  nextQuestion: {fileID: 0}
