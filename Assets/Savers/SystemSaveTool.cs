@@ -7,13 +7,12 @@ using System.IO;
 [Serializable]
 public class boolManager
 {
-    public bool isPalto;
-    public bool isPantolon;
+    public bool WifeCard;
 }
 
 public class SystemSaveTool : MonoBehaviour
 {
-    public SystemSaveTool instance;
+    public static SystemSaveTool instance;
     public boolManager booleans;
     public TextAsset text;
     public string Jsondatas;
