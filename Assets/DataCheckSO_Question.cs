@@ -17,10 +17,13 @@ public class DataCheckSO_Question : MonoBehaviour
     
     private void Start()
     {
+        string a = "quest1Index1";
+        PlayerPrefs.SetString(a, a);
         Invoke("ListManager", 0);
         Invoke("trueAnswer", 0);
         StartCoroutine(TypeLine());
         CardCount();
+        SystemSaveTool.instance.LoadJson();
     }
    
 
@@ -50,20 +53,18 @@ public class DataCheckSO_Question : MonoBehaviour
     {
         for (int i = 0; i < SODatabase_Question[listnumber].answerSODatas.Count; i++)
         {
-            if (PlayerPrefs.HasKey(SODatabase_Question[listnumber].answerSODatas[i].TrueIndexControl))
+
+            if (PlayerPrefs.HasKey(SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue))
             {
-                if (SODatabase_Question[listnumber].answerSODatas[i].indexes == PlayerPrefs.GetInt(SODatabase_Question[listnumber].answerSODatas[i].TrueIndexControl))
-                {
-                    if (PlayerPrefs.HasKey(SODatabase_Question[listnumber].answerSODatas[i].TrueIndexControl))
-                    {
-                        SODatabase_Question[listnumber].answerSODatas[i].isTrue = true;
-                        Debug.Log(PlayerPrefs.GetInt(SODatabase_Question[listnumber].answerSODatas[i].TrueIndexControl));
-                        if (SODatabase_Question[listnumber].answerSODatas[i].TrueIndexControl == "")
-                            Debug.Log("playerprefs ismi gir " + listnumber + " " + i);
-                    }
-                }
+                SODatabase_Question[listnumber].answerSODatas[i].isTrue = true;
+                Debug.Log(PlayerPrefs.GetInt(SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue));
+                if (SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue == "")
+                    Debug.Log("playerprefs ismi gir " + listnumber + " " + i);
             }
-            
+            else
+                SODatabase_Question[listnumber].answerSODatas[i].isTrue = false;
+
+
         }
 
     }

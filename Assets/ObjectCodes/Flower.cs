@@ -14,5 +14,8 @@ public class Flower : MonoBehaviour,IInteract
     {
         Debug.Log("objectClick");
         label.gameObject.SetActive(true);
+        SystemSaveTool.instance.booleans.FavoriteFlower = this.gameObject.name;
+        SystemSaveTool.instance.JsonSaveVoid();
+
     }
 }

@@ -8,6 +8,10 @@ public class inGameSaver : MonoBehaviour
 
     public bool wifeImage;
     public bool FlowerLabel;
+    
+    public bool phoneOpen;
+    public bool flowerOpen;
+    public static bool LibraryOpenBool;
 
 
     void Start()
@@ -21,10 +25,11 @@ public class inGameSaver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (wifeImage && FlowerLabel)
+        if(phoneOpen && flowerOpen)
         {
-            SystemSaveTool.instance.booleans.WifeCard = true;
+            SystemSaveTool.instance.booleans.isFavoriteFlower = true;
             SystemSaveTool.instance.JsonSaveVoid();
         }
+
     }
 }

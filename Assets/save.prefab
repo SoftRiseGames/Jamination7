@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1598734153696639528}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4343061, y: -0.07277912, z: -0.12265347}
+  m_LocalPosition: {x: 8.31, y: 4.36, z: -0.12265347}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44,9 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22483f64397db5c4da021317f24c7ecd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instance: {fileID: 0}
   booleans:
-    isPalto: 0
-    isPantolon: 0
+    WifeCard: 0
   text: {fileID: 4900000, guid: 421c5d5a7d0e89f47a3d02bc27e3fee2, type: 3}
   Jsondatas: 

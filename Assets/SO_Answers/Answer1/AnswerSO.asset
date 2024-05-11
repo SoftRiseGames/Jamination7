@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO
   m_EditorClassIdentifier: 
   answer: amerika
-  TrueIndexControl: answer1Index1
-  FoundCheckName: isPalto
-  indexes: 0
+  QuestBasedTrueValue: quest1Index1
+  FoundCheckName: isPaltoFound
   isTrue: 0
-  isFound: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}

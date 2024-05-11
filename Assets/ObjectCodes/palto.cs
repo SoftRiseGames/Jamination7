@@ -2,22 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Phone : MonoBehaviour, IInteract
+public class palto : MonoBehaviour,IInteract
 {
-    
+    public GameObject Palto;
+
     public void interact()
     {
-        image();
+        EnterPalto();
     }
-    void image()
+  
+    void EnterPalto()
     {
-        if (RandomEvents.scenarioWomanOrKid == 1)
+       
+        if (RandomEvents.isBadPalto)
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         else
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
-
-        inGameSaver.LibraryOpenBool = true;
-        SystemSaveTool.instance.JsonSaveVoid();
     }
-    
 }

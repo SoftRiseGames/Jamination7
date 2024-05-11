@@ -13,10 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO 1
   m_EditorClassIdentifier: 
   answer: rusya
-  TrueIndexControl: Answer1Index2
-  FoundCheckName: isgomlekFound
-  indexes: 1
+  QuestBasedTrueValue: Quest1Index2
+  FoundCheckName: isGomlekFound
   isTrue: 0
-  isFound: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
