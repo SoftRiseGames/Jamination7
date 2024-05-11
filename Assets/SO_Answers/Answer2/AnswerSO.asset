@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   answer: c
   playerPrefsName: 
+  indexes: 1
   isTrue: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
-  indexes: 1

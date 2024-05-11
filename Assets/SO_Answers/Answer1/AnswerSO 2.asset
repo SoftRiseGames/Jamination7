@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: AnswerSO 2
   m_EditorClassIdentifier: 
   answer: belcika
-  playerPrefsName: quest1
+  TrueIndexControl: Answer1Index3
+  FoundCheckName: isPantolonFound
+  indexes: 2
   isTrue: 0
+  isFound: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
-  indexes: 2

@@ -16,6 +16,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 60f6047b896db374588921dff795ccae, type: 2}
   - {fileID: 11400000, guid: 47cc5a19548b44a4b85544acbf125bb3, type: 2}
   - {fileID: 11400000, guid: 3af3f6004a7a3e14789073f110db99dd, type: 2}
-  question: 
-  trueAnswer: 
-  nextQuestion: {fileID: 0}
+  question: sasasas

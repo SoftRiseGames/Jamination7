@@ -16,5 +16,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8da28ca3c0cbcc34e9e2bdb40452c158, type: 2}
   - {fileID: 11400000, guid: 5e4d7be9710d44f4581881b84a6a919b, type: 2}
   - {fileID: 11400000, guid: dba94788af9b74941851e7b0946f19ee, type: 2}
+  - {fileID: 11400000, guid: bed4ffa25686d8b44a41c76813fa9b34, type: 2}
   question: annenin ismi
-  nextQuestion: {fileID: 0}

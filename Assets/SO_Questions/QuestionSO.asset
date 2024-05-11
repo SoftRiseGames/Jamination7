@@ -17,5 +17,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4b2711bf78202674396beed8bee90dda, type: 2}
   - {fileID: 11400000, guid: eea7c51fe22e3264aa06af0e86c76de7, type: 2}
   question: Why did you do that
-  trueAnswer: 
-  nextQuestion: {fileID: 0}
