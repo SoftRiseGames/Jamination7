@@ -22,16 +22,10 @@ public class SystemSaveTool : MonoBehaviour
     {
         if (instance == null)
             instance = this;
-        LoadJson(); // Oyun baþladýðýnda JSON'u yükle
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.X))
-            JsonSaveVoid();
-    }
-
+  
     public void JsonSaveVoid()
     {
         string jsonstring = JsonUtility.ToJson(booleans);
