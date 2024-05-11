@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO
   m_EditorClassIdentifier: 
   answer: amerika
-  isTrue: 0
+  playerPrefsName: quest1
+  isTrue: 1
+  isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
+  indexes: 0

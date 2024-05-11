@@ -5,9 +5,9 @@ using System;
 public class ClickedControl : MonoBehaviour
 {
     public static Action isClicked;
-
     private void OnMouseDown()
     {
         isClicked?.Invoke();
     }
+
 }

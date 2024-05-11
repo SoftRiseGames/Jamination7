@@ -4,7 +4,10 @@ using UnityEngine;
 public class SO_AnswerScript : ScriptableObject
 {
     public string answer;
+    public string playerPrefsName;
+    public int indexes;
     public bool isTrue;
     public bool isSpecialQuestion;
     public SO_QuestionScript nextQuestion;
+  
 }

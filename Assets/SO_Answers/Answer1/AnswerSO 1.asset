@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO 1
   m_EditorClassIdentifier: 
   answer: rusya
+  playerPrefsName: quest1
   isTrue: 0
+  isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
+  indexes: 1
