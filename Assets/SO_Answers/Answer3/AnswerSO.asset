@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cb48f6b4f459b4a8541378a56c2877, type: 3}
   m_Name: AnswerSO
   m_EditorClassIdentifier: 
-  answer: euphoria
-  TrueIndexControl: 
-  FoundCheckName: isDog
-  indexes: 0
+  answer: Dog
+  FoundCheckName: isAnimal
+  QuestCheck: 1
   isTrue: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
