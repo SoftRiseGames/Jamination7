@@ -9,4 +9,5 @@ public class SO_AnswerScript : ScriptableObject
     public bool isTrue;
     public bool isSpecialQuestion;
     public SO_QuestionScript nextQuestion;
+    public Sprite sprite;
 }

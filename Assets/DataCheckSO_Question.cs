@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using System;
-
+using DG.Tweening;
 public class DataCheckSO_Question : MonoBehaviour
 {
     public SO_QuestionScript[] SODatabase_Question;                                                                                 
@@ -41,12 +41,14 @@ public class DataCheckSO_Question : MonoBehaviour
         trueAnswer();
         nextDialogue();
         CardCount();
+        
     }
     private void objectNumberIncrease()
     {
         Debug.Log("touch");
         if (listnumber < SODatabase_Question.Length - 1)
             listnumber = listnumber + 1;
+        cardChecker = 0;
     }
    
     void trueAnswer()
@@ -84,15 +86,21 @@ public class DataCheckSO_Question : MonoBehaviour
 
                 if (SODatabase_Question[listnumber].answerSODatas[b].FoundCheckName == i)
                 {
-                    cardChecker = cardChecker + 1;
+                    Cards[cardChecker].GetComponent<SpriteRenderer>().DOFade(1,.5f);
                     Cards[cardChecker].gameObject.SetActive(true);
                     Cards[cardChecker].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[b].answer;
+                    cardChecker = cardChecker + 1;
+                 
                 }
+               
+               
             }
            
         }
         
     }
+
+   
     void nextDialogue()
     {
         text.text = String.Empty;
