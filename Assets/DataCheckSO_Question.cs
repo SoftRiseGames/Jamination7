@@ -22,6 +22,7 @@ public class DataCheckSO_Question : MonoBehaviour
         
         Invoke("ListManager", 0);
         Invoke("trueAnswer", 0);
+        Invoke("nextDialogue", 0);
         StartCoroutine(TypeLine());
         SystemSaveTool.instance.LoadJson();
         CardCount();
@@ -50,6 +51,7 @@ public class DataCheckSO_Question : MonoBehaviour
         if (listnumber < SODatabase_Question.Length - 1)
             listnumber = listnumber + 1;
         cardChecker = 0;
+        Cards[cardChecker].GetComponent<SpriteRenderer>().DOFade(0, .5f);
     }
    
     void trueAnswer()

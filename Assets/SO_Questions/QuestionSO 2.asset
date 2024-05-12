@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QuestionSO 2
   m_EditorClassIdentifier: 
   answerSODatas:
-  - {fileID: 11400000, guid: 60f6047b896db374588921dff795ccae, type: 2}
-  - {fileID: 11400000, guid: 47cc5a19548b44a4b85544acbf125bb3, type: 2}
-  question: sasasas
+  - {fileID: 11400000, guid: 9f8dfad681233274686dfd2dbe5ad14a, type: 2}
+  - {fileID: 11400000, guid: d7e76c9da04f55345a2af5e3cabde58b, type: 2}
+  - {fileID: 11400000, guid: 55005a49fe2e1214fb6846df0a49c501, type: 2}
+  question: "En Sevdi\u011Fin \xC7i\xE7ek"

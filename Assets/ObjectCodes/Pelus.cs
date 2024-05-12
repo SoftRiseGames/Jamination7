@@ -11,6 +11,7 @@ public class Pelus : MonoBehaviour
     }
     void FavoriteAnimal()
     {
+        SystemSaveTool.instance.booleans.dataCheck.Add("isPelus");
         SystemSaveTool.instance.booleans.BoyFavoriteAnimal = this.gameObject.name;
         SystemSaveTool.instance.JsonSaveVoid();
     }

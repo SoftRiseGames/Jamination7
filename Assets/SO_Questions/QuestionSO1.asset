@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ba92b839de96d4aa87729685a74a75, type: 3}
+  m_Name: QuestionSO1
+  m_EditorClassIdentifier: 
+  answerSODatas:
+  - {fileID: 11400000, guid: 083a1217c8a4e724097fe17b02f8b6a4, type: 2}
+  - {fileID: 11400000, guid: 4b2711bf78202674396beed8bee90dda, type: 2}
+  - {fileID: 11400000, guid: eea7c51fe22e3264aa06af0e86c76de7, type: 2}
+  - {fileID: 11400000, guid: 424539118ac8c214c96db66385055560, type: 2}
+  - {fileID: 11400000, guid: 6ae6f294b94ec9e4c9abfff23cb0ecb8, type: 2}
+  - {fileID: 11400000, guid: 7912d58323091d844a75569a0f289351, type: 2}
+  question: "\u0130yi Biri Misin?"
