@@ -9,6 +9,7 @@ public class DataCheckSO_Question : MonoBehaviour
     public SO_QuestionScript[] SODatabase_Question;                                                                                 
     public GameObject[] Cards;
     public int listnumber;
+    
 
     [SerializeField] TextMeshProUGUI text;
     public string lines;
@@ -17,15 +18,14 @@ public class DataCheckSO_Question : MonoBehaviour
     
     private void Start()
     {
-        string a = "quest1Index1";
-        PlayerPrefs.SetString(a, a);
+        
         Invoke("ListManager", 0);
         Invoke("trueAnswer", 0);
         StartCoroutine(TypeLine());
-        CardCount();
         SystemSaveTool.instance.LoadJson();
+        CardCount();
     }
-   
+    
 
     private void OnEnable()
     {
@@ -51,22 +51,17 @@ public class DataCheckSO_Question : MonoBehaviour
    
     void trueAnswer()
     {
-        for (int i = 0; i < SODatabase_Question[listnumber].answerSODatas.Count; i++)
+        for (int b = 0; b < SODatabase_Question[listnumber].answerSODatas.Count; b++)
         {
 
-            if (PlayerPrefs.HasKey(SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue))
+            if (SODatabase_Question[listnumber].answerSODatas[b].QuestCheck == true)
             {
-                SODatabase_Question[listnumber].answerSODatas[i].isTrue = true;
-                Debug.Log(PlayerPrefs.GetInt(SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue));
-                if (SODatabase_Question[listnumber].answerSODatas[i].QuestBasedTrueValue == "")
-                    Debug.Log("playerprefs ismi gir " + listnumber + " " + i);
+                if (SystemSaveTool.instance.booleans.BoyFavoriteAnimal == SODatabase_Question[listnumber].answerSODatas[b].answer || SystemSaveTool.instance.booleans.FavoriteFlower == SODatabase_Question[listnumber].answerSODatas[b].answer)
+                     SODatabase_Question[listnumber].answerSODatas[b].isTrue = true;
+                else
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = false;
             }
-            else
-                SODatabase_Question[listnumber].answerSODatas[i].isTrue = false;
-
-
         }
-
     }
     IEnumerator TypeLine()
     {
@@ -82,18 +77,20 @@ public class DataCheckSO_Question : MonoBehaviour
         {
             i.gameObject.SetActive(false);
         }
-
-        for (int i = 0; i < SODatabase_Question[listnumber].answerSODatas.Count; i++)
+        foreach(string i in SystemSaveTool.instance.booleans.dataCheck)
         {
-            
-            if (PlayerPrefs.HasKey(SODatabase_Question[listnumber].answerSODatas[i].FoundCheckName))
+            for (int b = 0; b < SODatabase_Question[listnumber].answerSODatas.Count; b++)
             {
-                Cards[i].gameObject.SetActive(true);
-                Cards[i].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[i].answer;
-            }
-               
 
+                if (SODatabase_Question[listnumber].answerSODatas[b].FoundCheckName == i)
+                {
+                    Cards[b].gameObject.SetActive(true);
+                    Cards[b].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[b].answer;
+                }
+            }
+           
         }
+        
     }
     void nextDialogue()
     {

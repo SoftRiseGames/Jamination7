@@ -4,8 +4,8 @@ using UnityEngine;
 public class SO_AnswerScript : ScriptableObject
 {
     public string answer;
-    public string QuestBasedTrueValue;
     public string FoundCheckName;
+    public bool QuestCheck;
     public bool isTrue;
     public bool isSpecialQuestion;
     public SO_QuestionScript nextQuestion;

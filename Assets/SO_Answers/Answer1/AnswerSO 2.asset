@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: AnswerSO 2
   m_EditorClassIdentifier: 
   answer: belcika
-  QuestBasedTrueValue: Quest1Index3
-  FoundCheckName: isPantolonFound
-  isTrue: 0
+  TrueIndexControl: 
+  FoundCheckName: isWifeGoodLibrary
+  indexes: 0
+  isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}

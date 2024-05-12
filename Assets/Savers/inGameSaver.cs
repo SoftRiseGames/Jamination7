@@ -27,7 +27,7 @@ public class inGameSaver : MonoBehaviour
     {
         if(phoneOpen && flowerOpen)
         {
-            SystemSaveTool.instance.booleans.isFavoriteFlower = true;
+            SystemSaveTool.instance.booleans.dataCheck.Add("FavoriteFlower"); 
             SystemSaveTool.instance.JsonSaveVoid();
         }
 

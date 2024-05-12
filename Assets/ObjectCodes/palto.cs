@@ -15,8 +15,16 @@ public class palto : MonoBehaviour,IInteract
     {
        
         if (RandomEvents.isBadPalto)
+        {
             this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+            SystemSaveTool.instance.booleans.dataCheck.Add("isBadPalto");
+        }
         else
+        {
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
+            SystemSaveTool.instance.booleans.dataCheck.Add("isGoodPalto");
+        }
+        SystemSaveTool.instance.JsonSaveVoid();
+            
     }
 }

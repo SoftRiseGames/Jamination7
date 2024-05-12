@@ -2558,7 +2558,7 @@ GameObject:
   - component: {fileID: 908212800}
   - component: {fileID: 908212801}
   m_Layer: 0
-  m_Name: TelefonResim (1)
+  m_Name: Boy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4588,6 +4588,7 @@ MonoBehaviour:
   hayvanTipi: 0
   cicekRandomizer: 0
   YearLoop: 0
+  ScenarioGoodOrBad: 0
   palto: {fileID: 112349095}
   SandalyePelus:
   - {fileID: 727792791}
@@ -4740,7 +4741,7 @@ GameObject:
   - component: {fileID: 1958129966}
   - component: {fileID: 1958129967}
   m_Layer: 0
-  m_Name: TelefonResim
+  m_Name: Wife
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

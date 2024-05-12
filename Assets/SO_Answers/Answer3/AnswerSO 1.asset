@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: AnswerSO 1
   m_EditorClassIdentifier: 
   answer: like that
-  QuestBasedTrueValue: Quest3Index2
-  FoundCheckName: 
+  TrueIndexControl: 
+  FoundCheckName: isCat
+  indexes: 0
   isTrue: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}

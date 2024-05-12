@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54cb48f6b4f459b4a8541378a56c2877, type: 3}
-  m_Name: AnswerSO 1
+  m_Name: AnswerSO 4
   m_EditorClassIdentifier: 
-  answer: rusya
+  answer: 
   TrueIndexControl: 
-  FoundCheckName: isBadPalto
+  FoundCheckName: isBoyGoodLibrary
   indexes: 0
-  isTrue: 0
+  isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}

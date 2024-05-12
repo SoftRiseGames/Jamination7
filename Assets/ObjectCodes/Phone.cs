@@ -17,7 +17,7 @@ public class Phone : MonoBehaviour, IInteract
             this.gameObject.transform.GetChild(1).gameObject.SetActive(true);
 
         inGameSaver.LibraryOpenBool = true;
-        SystemSaveTool.instance.JsonSaveVoid();
+        
     }
     
 }

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO 2
   m_EditorClassIdentifier: 
   answer: a
-  QuestBasedTrueValue: Quest2Index3
-  FoundCheckName: 
+  FoundCheckName: isFlower
+  QuestCheck: 1
   isTrue: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}

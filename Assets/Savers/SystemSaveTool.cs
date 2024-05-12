@@ -7,13 +7,9 @@ using System.IO;
 [Serializable]
 public class boolManager
 {
-    public bool LibraryOpenBool;
-    public bool isFavoriteFlower;
-    public bool isgoodPalto;
-    public bool isbadPalto;
-    public bool isBadLibrary;
-    public bool isGoodLibrary;
-    public bool isShoe;
+    public  List<String> dataCheck;
+   
+
     public string BoyFavoriteAnimal;
     public string FavoriteFlower;
     public string shoeType;
@@ -32,8 +28,7 @@ public class SystemSaveTool : MonoBehaviour
             instance = this;
     }
 
-    // Update is called once per frame
-  
+
     public void JsonSaveVoid()
     {
         string jsonstring = JsonUtility.ToJson(booleans);
