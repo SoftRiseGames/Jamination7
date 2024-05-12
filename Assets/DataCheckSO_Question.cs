@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using System;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 public class DataCheckSO_Question : MonoBehaviour
 {
     public SO_QuestionScript[] SODatabase_Question;                                                                                 
@@ -11,7 +12,7 @@ public class DataCheckSO_Question : MonoBehaviour
     public GameObject[] CardIdles;
     public int listnumber;
     int cardChecker;
-
+    int i = 0;
     [SerializeField] TextMeshProUGUI text;
     public string lines;
     public float textSpeed;
@@ -19,6 +20,10 @@ public class DataCheckSO_Question : MonoBehaviour
     bool isBoyAnimalCheck;
     bool FavoriteFlower;
     bool shoeAnimType;
+
+    int trueCounter;
+    int falseCounter;
+
     private void Start()
     {
         Invoke("CardRest", 0);
@@ -41,17 +46,18 @@ public class DataCheckSO_Question : MonoBehaviour
     }
     void classWorks()
     {
-        CardRest();
+        checkTrue();
         objectNumberIncrease();
         trueAnswer();
         nextDialogue();
         CardCount();
-        
+        CoroutineTextEvent();
     }
     private void objectNumberIncrease()
     {
+        Debug.Log(PlayerPrefs.GetInt("inputGo"));
         Debug.Log("touch");
-        if (listnumber < SODatabase_Question.Length - 1)
+        if (listnumber < SODatabase_Question.Length-1)
             listnumber = listnumber + 1;
         cardChecker = 0;
         Cards[cardChecker].GetComponent<SpriteRenderer>().DOFade(0, .5f);
@@ -102,10 +108,8 @@ public class DataCheckSO_Question : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
-    void CardRest()
-    {
-        
-    }
+    
+    
     void CardCount()
     {
         foreach (GameObject i in Cards)
@@ -135,16 +139,53 @@ public class DataCheckSO_Question : MonoBehaviour
         
     }
 
-   
-    void nextDialogue()
+    void CoroutineTextEvent()
     {
-        text.text = String.Empty;
-        lines = SODatabase_Question[listnumber].question;
+        StopAllCoroutines();
+        text.text = string.Empty;
         StartCoroutine(TypeLine());
+
     }
 
+    void checkTrue()
+    {
+        Debug.Log(PlayerPrefs.GetInt("inputGo"));
+        
+        if (SODatabase_Question[listnumber].answerSODatas[PlayerPrefs.GetInt("inputGo")].isTrue)
+        {
+            trueCounter++;
+            Debug.Log("true");
+        }
+        else if(SODatabase_Question[listnumber].answerSODatas[PlayerPrefs.GetInt("inputGo")].isTrue == false)
+        {
+            falseCounter++;
+            Debug.Log("false");
+        }
+        
+    }
+ 
+    void nextDialogue()
+    {
 
+        
+        if (i < 4)
+        {
+            text.text = String.Empty;
+            lines = SODatabase_Question[i].question;
+            StartCoroutine(TypeLine());
+            i = i + 1;
+        }
+        else if (i == 4)
+        {
+            if (trueCounter > falseCounter)
+                SceneManager.LoadScene(3);
+            else if(trueCounter<= falseCounter)
+                SceneManager.LoadScene(4);
 
+        }
+            Debug.Log("end");
 
-
+        Debug.Log(i);
+    }
+    
 }

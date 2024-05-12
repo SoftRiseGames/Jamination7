@@ -7,6 +7,7 @@ public class ClickedControl : MonoBehaviour
 {
     public static Action isClicked;
     public float startpositionY;
+    int inputGo;
     bool isHigh;
     private void Start()
     {
@@ -26,11 +27,11 @@ public class ClickedControl : MonoBehaviour
     private void Update()
     {
         DistanceMeter();
-        
     }
 
     private void OnMouseDown()
     {
+        PlayerPrefs.SetInt("inputGo", inputGo);
         isClicked?.Invoke();
     }
 

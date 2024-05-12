@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 54cb48f6b4f459b4a8541378a56c2877, type: 3}
-  m_Name: gul
+  m_Name: 2
   m_EditorClassIdentifier: 
-  answer: gul
-  FoundCheckName: isFlower
-  QuestCheck: 1
-  isTrue: 0
+  answer: Wife
+  FoundCheckName: isWifeGoodLibrary
+  QuestCheck: 0
+  isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 29ae794cb485a46499df68a4fde2d9d0, type: 3}
+  sprite: {fileID: 21300000, guid: f1b5d80e0d5cc224f96f767fac7cce16, type: 3}
