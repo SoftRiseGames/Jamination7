@@ -8,6 +8,7 @@ public class DataCheckSO_Question : MonoBehaviour
 {
     public SO_QuestionScript[] SODatabase_Question;                                                                                 
     public GameObject[] Cards;
+    public GameObject[] CardIdles;
     public int listnumber;
     int cardChecker;
 

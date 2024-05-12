@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AnswerSO 1
   m_EditorClassIdentifier: 
   answer: rusya
-  TrueIndexControl: 
   FoundCheckName: isBadPalto
-  indexes: 0
+  QuestCheck: 0
   isTrue: 0
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0be8358adfd801d4b8275fcdde713092, type: 3}
