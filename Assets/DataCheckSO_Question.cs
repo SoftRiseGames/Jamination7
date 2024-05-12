@@ -178,9 +178,9 @@ public class DataCheckSO_Question : MonoBehaviour
         else if (i == 4)
         {
             if (trueCounter > falseCounter)
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(2);
             else if(trueCounter<= falseCounter)
-                SceneManager.LoadScene(4);
+                SceneManager.LoadScene(3);
 
         }
             Debug.Log("end");
