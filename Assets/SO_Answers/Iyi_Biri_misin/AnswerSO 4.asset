@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cb48f6b4f459b4a8541378a56c2877, type: 3}
   m_Name: AnswerSO 4
   m_EditorClassIdentifier: 
-  answer: dasdasda
+  answer: Nephew
   FoundCheckName: isBoyGoodLibrary
   QuestCheck: 0
   isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 7cdb3dccf49088647b3c1f4838b8e122, type: 3}
+  sprite: {fileID: 21300000, guid: 27c8f675a53b0f34196ab626f9d1bf50, type: 3}

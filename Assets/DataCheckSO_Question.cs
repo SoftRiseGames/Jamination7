@@ -15,11 +15,13 @@ public class DataCheckSO_Question : MonoBehaviour
     [SerializeField] TextMeshProUGUI text;
     public string lines;
     public float textSpeed;
-    
-    
+
+    bool isBoyAnimalCheck;
+    bool FavoriteFlower;
+    bool shoeAnimType;
     private void Start()
     {
-        
+        Invoke("CardRest", 0);
         Invoke("ListManager", 0);
         Invoke("trueAnswer", 0);
         Invoke("nextDialogue", 0);
@@ -39,6 +41,7 @@ public class DataCheckSO_Question : MonoBehaviour
     }
     void classWorks()
     {
+        CardRest();
         objectNumberIncrease();
         trueAnswer();
         nextDialogue();
@@ -61,10 +64,33 @@ public class DataCheckSO_Question : MonoBehaviour
 
             if (SODatabase_Question[listnumber].answerSODatas[b].QuestCheck == true)
             {
-                if (SystemSaveTool.instance.booleans.BoyFavoriteAnimal == SODatabase_Question[listnumber].answerSODatas[b].answer || SystemSaveTool.instance.booleans.FavoriteFlower == SODatabase_Question[listnumber].answerSODatas[b].answer)
-                     SODatabase_Question[listnumber].answerSODatas[b].isTrue = true;
+                if((SystemSaveTool.instance.booleans.BoyFavoriteAnimal == SODatabase_Question[listnumber].answerSODatas[b].answer) && !isBoyAnimalCheck)
+                {
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = true;
+                    isBoyAnimalCheck = true;
+                }
                 else
                     SODatabase_Question[listnumber].answerSODatas[b].isTrue = false;
+
+                if((SystemSaveTool.instance.booleans.FavoriteFlower == SODatabase_Question[listnumber].answerSODatas[b].answer) && !FavoriteFlower)
+                {
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = true;
+                    FavoriteFlower = true;
+                }
+                else
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = false;
+
+                if((SystemSaveTool.instance.booleans.shoeAnimType == SODatabase_Question[listnumber].answerSODatas[b].answer) && !shoeAnimType)
+                {
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = true;
+                    shoeAnimType = true;
+                }
+                else
+                {
+                    SODatabase_Question[listnumber].answerSODatas[b].isTrue = false;
+                    
+                }
+
             }
         }
     }
@@ -76,13 +102,18 @@ public class DataCheckSO_Question : MonoBehaviour
             yield return new WaitForSeconds(textSpeed);
         }
     }
+    void CardRest()
+    {
+        
+    }
     void CardCount()
     {
-        foreach(GameObject i in Cards)
+        foreach (GameObject i in Cards)
         {
             i.gameObject.SetActive(false);
         }
-        foreach(string i in SystemSaveTool.instance.booleans.dataCheck)
+
+        foreach (string i in SystemSaveTool.instance.booleans.dataCheck)
         {
             for (int b = 0; b < SODatabase_Question[listnumber].answerSODatas.Count; b++)
             {

@@ -1226,10 +1226,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SODatabase_Question:
-  - {fileID: 11400000, guid: be3c60e69de95cc439b5b59c5956bea7, type: 2}
   - {fileID: 11400000, guid: 37c52a62f42c459438493c11ebe8bfd8, type: 2}
   - {fileID: 11400000, guid: be3c60e69de95cc439b5b59c5956bea7, type: 2}
-  - {fileID: 11400000, guid: 05c0dba41bfbdd3479f7241fc7bd45db, type: 2}
+  - {fileID: 11400000, guid: dfdb64da65c784d4baa6f2a36a0ba153, type: 2}
   - {fileID: 11400000, guid: 05c0dba41bfbdd3479f7241fc7bd45db, type: 2}
   Cards:
   - {fileID: 1501249330047756887}

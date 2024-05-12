@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71ba92b839de96d4aa87729685a74a75, type: 3}
-  m_Name: QuestionSO1
+  m_Name: iyi_biri_misin
   m_EditorClassIdentifier: 
   answerSODatas:
   - {fileID: 11400000, guid: 083a1217c8a4e724097fe17b02f8b6a4, type: 2}

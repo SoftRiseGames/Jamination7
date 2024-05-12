@@ -13,6 +13,7 @@ public class boolManager
     public string BoyFavoriteAnimal;
     public string FavoriteFlower;
     public string shoeAnimType;
+    public string FavoriteAnimal;
 }
 
 public class SystemSaveTool : MonoBehaviour

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54cb48f6b4f459b4a8541378a56c2877, type: 3}
   m_Name: AnswerSO
   m_EditorClassIdentifier: 
-  answer: amerika
+  answer: Nephew
   FoundCheckName: isGoodPalto
   QuestCheck: 0
   isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
-  sprite: {fileID: 21300000, guid: 2395654c6875392449e8974aad03a105, type: 3}
+  sprite: {fileID: 21300000, guid: 27c8f675a53b0f34196ab626f9d1bf50, type: 3}

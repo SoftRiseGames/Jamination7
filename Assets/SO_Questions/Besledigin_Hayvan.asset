@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71ba92b839de96d4aa87729685a74a75, type: 3}
-  m_Name: QuestionSO
+  m_Name: Besledigin_Hayvan
   m_EditorClassIdentifier: 
   answerSODatas:
-  - {fileID: 11400000, guid: d7e76c9da04f55345a2af5e3cabde58b, type: 2}
-  - {fileID: 11400000, guid: 55005a49fe2e1214fb6846df0a49c501, type: 2}
-  - {fileID: 11400000, guid: 55005a49fe2e1214fb6846df0a49c501, type: 2}
-  question: "Ye\u011Feninin En Sevdi\u011Fi Hayvan"
+  - {fileID: 11400000, guid: 785ad1cbec0ddae45b59d7efe5635848, type: 2}
+  - {fileID: 11400000, guid: fe11f76dccd75954ea8a764deb06b4ca, type: 2}
+  question: "Besledi\u011Fin Hayvan"
