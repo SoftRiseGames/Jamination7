@@ -88,6 +88,7 @@ public class DataCheckSO_Question : MonoBehaviour
                 {
                     Cards[cardChecker].GetComponent<SpriteRenderer>().DOFade(1,.5f);
                     Cards[cardChecker].gameObject.SetActive(true);
+                    Cards[cardChecker].GetComponent<SpriteRenderer>().sprite = SODatabase_Question[listnumber].answerSODatas[b].sprite;
                     Cards[cardChecker].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[b].answer;
                     cardChecker = cardChecker + 1;
                  
