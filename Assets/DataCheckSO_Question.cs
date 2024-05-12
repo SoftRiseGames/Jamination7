@@ -9,7 +9,7 @@ public class DataCheckSO_Question : MonoBehaviour
     public SO_QuestionScript[] SODatabase_Question;                                                                                 
     public GameObject[] Cards;
     public int listnumber;
-    
+    int cardChecker;
 
     [SerializeField] TextMeshProUGUI text;
     public string lines;
@@ -84,8 +84,9 @@ public class DataCheckSO_Question : MonoBehaviour
 
                 if (SODatabase_Question[listnumber].answerSODatas[b].FoundCheckName == i)
                 {
-                    Cards[b].gameObject.SetActive(true);
-                    Cards[b].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[b].answer;
+                    cardChecker = cardChecker + 1;
+                    Cards[cardChecker].gameObject.SetActive(true);
+                    Cards[cardChecker].transform.GetChild(0).transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = SODatabase_Question[listnumber].answerSODatas[b].answer;
                 }
             }
            

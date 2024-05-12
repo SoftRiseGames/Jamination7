@@ -18,6 +18,7 @@ public class inGameSaver : MonoBehaviour
     {
         if (instance == null)
             instance = this;
+        LibraryOpenBool = false;
     }
 
     

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: AnswerSO 2
   m_EditorClassIdentifier: 
   answer: belcika
-  TrueIndexControl: 
   FoundCheckName: isWifeGoodLibrary
-  indexes: 0
+  QuestCheck: 0
   isTrue: 1
   isSpecialQuestion: 0
   nextQuestion: {fileID: 0}
